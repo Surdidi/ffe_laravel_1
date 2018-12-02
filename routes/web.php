@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/',function () {
-    return view('welcome');
-});
-
+Route::get('/','ControlPage@connexion');
+Route::post('/','ControlPage@verif_id');
 route::get('salut',function(){
   return 'test';
 });
@@ -22,5 +20,3 @@ route::get('salut',function(){
 route::get('salut/{name}',function($name){
   return "bonjour $name";
 });
-
-route::get('test','ControlPage@test');

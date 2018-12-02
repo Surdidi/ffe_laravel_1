@@ -3,11 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ControlPage extends Controller{
+  public function connexion(){
+    return view('pages/connexion');
+  }
 
-public function test(){
-  return view('pages/test');
-}
+  public static function verif_id(Request $request){
+    $user = $request->input('login');
+    $mdp = $request->input('psw');
+    $req = DB::select('select count(*) as nb  from utilisateurs where mail_utilisateur = ? and mdp_utilisateur = ?',[$user,$mdp]);
+    $test = (int) $req[0]->nb ;
+    var_dump($test);
+    if($test == 1){
+      return view('pages/accueil');
+    }
+  }
+
 
 }

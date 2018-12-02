@@ -1,0 +1,182 @@
+body#LoginForm{ background-image:url("../image/chess_background.jpg"); background-repeat:no-repeat; background-position:center; background-size:cover; padding:10px;}
+
+.form-heading { color:#fff; font-size:23px;}
+.panel h2{ color:#70a1ff; font-size:20px; margin:0 0 8px 0;}
+.panel p { color:#777777; font-size:14px; margin-bottom:30px; line-height:24px;}
+.login-form .form-control {
+  background: #f7f7f7 none repeat scroll 0 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+}
+.main-div {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 2px;
+  margin: 120px auto 160px;
+  margin-right : 220px;
+  max-width: 53%;
+  padding: 50px 70px 90px 90px;
+}
+
+.login-form .form-group {
+  margin-bottom:10px;
+}
+.login-form{ text-align:center;}
+.forgot a {
+  color: #777777;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.login-form  .btn.btn-primary {
+  background: #70a1ff none repeat scroll 0 0;
+  border-color: #70a1ff;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+}
+.forgot {
+  text-align: left; margin-bottom:30px;
+}
+
+.login-form .btn.btn-primary.reset {
+  background: #ff9900 none repeat scroll 0 0;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font: 400 1.4rem 'Lato', Verdana, Helvetica, sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {'
+  width:50 %;
+  margin: 50px, auto;
+}
+section button {
+  /*margin: 50px,50px,50px auto;
+  font-size: 2.0rem;
+  padding: 1.25rem 2.5rem;
+  display: block;*/
+  background-color: #009ac9;
+  border: 1px solid transparent;
+  color: #ffffff;
+  font-weight: 300;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+section button:hover {
+  background-color: #ffffff;
+  color: #009ac9;
+  border-color: #009ac9;
+}
+
+.back { text-align: left; margin-top:0px;}
+.back a {color: #444444; font-size: 0px;text-decoration: none;}
+
+#menu__left{
+    background:linear-gradient(#5796CB,#93BCDD);
+    width:20%;
+    position: fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    display:inline-block;
+}
+img.profil{
+    height:200px;
+    margin-top:10px;
+}
+#menu__left li.clair{
+    background:#93BCDD;
+    width:100%;
+    list-style: none;
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align:center;
+}
+#menu__left li.normal{
+    background:#5796CB;
+    width:100%;
+    list-style: none;
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align:center;
+}
+#menu__left li.clair a{
+    color:#fff;
+    text-decoration: none;
+}
+#menu__left li.normal a{
+    color:#fff;
+    text-decoration: none;
+}
+
+#content{
+    width:80%;
+    float:right;
+    background:#fff;
+}
+#content img.banniere{
+    width:100%;
+    height:214px;
+}
+#content h1.title, h2.subtitle{
+    color:#5796CB;
+}
+#content h1.title, h2.subtitle span{
+    margin:25px;
+}
+#content table{
+    width:90%;
+    margin:0 auto;
+    border-collapse: collapse;
+}
+#content table thead th{
+    padding-top:10px;
+    padding-bottom:10px;
+    background:#5796CB;
+    border:1px solid #fff;
+}
+
+form#infos__user{
+    width:90%;
+    margin:0 auto;
+}
+form#infos__user div.infos__vous{
+    width:50%;
+    display:inline-block;
+}
+form#infos__user div.infos__addr{
+    float: right;
+    width:45%;
+}
+form#infos__user input{
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius:3px;
+    border:1px solid #e2e2e2;
+    margin-bottom:5px;
+}
