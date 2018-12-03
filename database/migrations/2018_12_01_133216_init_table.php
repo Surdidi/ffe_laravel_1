@@ -16,7 +16,6 @@ class InitTable extends Migration
       Schema::create('Club', function(Blueprint $table) {
       $table->increments('id_club');
       $table->string('cp_club', 5);
-
       $table->timestamps();
 
   });

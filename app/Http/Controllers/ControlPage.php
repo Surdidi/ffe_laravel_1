@@ -15,10 +15,18 @@ class ControlPage extends Controller{
     $mdp = $request->input('psw');
     $req = DB::select('select count(*) as nb  from utilisateurs where mail_utilisateur = ? and mdp_utilisateur = ?',[$user,$mdp]);
     $test = (int) $req[0]->nb ;
-    var_dump($test);
     if($test == 1){
-      return view('pages/accueil');
+      session(['mail' => $user]);
+      session(['mdp' => $mdp]);
+      return redirect('/acceuil');
     }
+    else(){
+      return redirect('/');
+    }
+  }
+
+  public static function accueil(){
+    return view('pages/accueil');
   }
 
 
