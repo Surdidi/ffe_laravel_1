@@ -13,7 +13,7 @@
 
 Route::get('/','ControlPage@connexion');
 Route::post('/','ControlPage@verif_id');
-Route::get('/acceuil','ControlPage@accueil'->middleware(accueil));
+Route::get('/acceuil','ControlPage@accueil')->middleware('Acceuil');
 
 route::get('salut',function(){
   return 'test';

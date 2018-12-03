@@ -13,12 +13,15 @@ class Ip
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle()
+    public function handle($request, Closure $next)
     {
       $user = session('user');
       $mdp = session('mdp');
         if($user == null && $mdp == null){
-          redirect('/');
+          return redirect('/');
+        }
+        else{
+          return $next($request);
         }
     }
 }
