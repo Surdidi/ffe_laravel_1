@@ -20,7 +20,7 @@ class ControlPage extends Controller{
       session(['mdp' => $mdp]);
       return redirect('/acceuil');
     }
-    else(){
+    else{
       return redirect('/');
     }
   }
