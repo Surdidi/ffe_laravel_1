@@ -17,6 +17,7 @@ class Ip
     {
       $user = session('user');
       $mdp = session('mdp');
+      $url = url()->current();
         if($user == null && $mdp == null){
           return redirect('/');
         }
